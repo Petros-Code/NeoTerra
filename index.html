@@ -37,8 +37,18 @@
         économiques de la région.<br />
         Découvrez les 6 ambitions de Néo Terra et devenez acteur du changement.
       </p>
-      <button class="accueil-jouer">Jouer</button>
+      <button class="accueil-jouer" id="btnAccueilJouer">Jouer</button>
     </main>
+    <section id="game" style="display: none">
+      <button id="endButton">Partie terminée</button>
+    </section>
+
+    <section id="endSection" style="display: none">
+      <h2>Félicitations !</h2>
+      <p>Vous avez terminé la partie. Merci d'avoir joué à Néo Terra !</p>
+      <button id="restartButton">Recommencer</button>
+    </section>
+
     <footer class="accueil-footer">
       <span class="footer-inline">
         <a
@@ -50,5 +60,6 @@
         &nbsp;|&nbsp;©2025 Région Nouvelle-Aquitaine
       </span>
     </footer>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>

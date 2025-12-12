@@ -1,3 +1,50 @@
+/* Style harmonisé pour les sections game et endSection */
+#game,
+#endSection {
+  background: linear-gradient(120deg, #009e60 0%, #0066b3 100%);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 60, 136, 0.1);
+  margin: 32px auto;
+  padding: 32px 24px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  animation: fadeInDown 1.2s cubic-bezier(0.39, 0.575, 0.56, 1) both;
+}
+
+#game button,
+#endSection button {
+  background: #fff;
+  color: #0066b3;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 60, 136, 0.08);
+  transition: background 0.2s, color 0.2s;
+}
+#game button:hover,
+#endSection button:hover {
+  background: #0066b3;
+  color: #fff;
+}
+/* Centrage de la section game */
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  text-align: center;
+  gap: 1rem;
+}
 .footer-inline {
   white-space: nowrap;
   display: inline-block;
