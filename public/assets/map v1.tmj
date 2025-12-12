@@ -1,0 +1,102 @@
+{ "compressionlevel":-1,
+ "height":11,
+ "infinite":false,
+ "layers":[
+        {
+         "data":[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 25,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 25, 13,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 25, 13,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 25, 13,
+            1, 1, 1, 1, 1, 1, 1, 1, 1, 25, 13,
+            1, 1, 1, 1, 1, 1, 1, 25, 25, 25, 13,
+            1, 1, 1, 25, 25, 25, 25, 25, 13, 13, 13],
+         "height":11,
+         "id":1,
+         "name":"Ground",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":11,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 55, 64, 68, 70, 67, 69, 28, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 64, 0, 0, 0,
+            0, 0, 0, 28, 64, 68, 0, 68, 0, 0, 0,
+            0, 0, 0, 69, 0, 55, 0, 70, 0, 0, 0,
+            0, 0, 0, 67, 0, 0, 0, 67, 0, 0, 0,
+            0, 0, 0, 70, 68, 64, 28, 69, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":11,
+         "id":2,
+         "name":"Parcours",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":11,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 188, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 188, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 139, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 130, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 130, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 130, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 130, 0,
+            0, 0, 0, 0, 0, 0, 0, 129, 129, 132, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":11,
+         "id":3,
+         "name":"Objects",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":11,
+         "x":0,
+         "y":0
+        }],
+ "nextlayerid":4,
+ "nextobjectid":1,
+ "orientation":"isometric",
+ "renderorder":"right-down",
+ "tiledversion":"1.11.2",
+ "tileheight":128,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "source":"assets tuile\/asset\/Ground.tsx"
+        }, 
+        {
+         "firstgid":91,
+         "source":"assets tuile\/asset\/Floorings.tsx"
+        }, 
+        {
+         "firstgid":121,
+         "source":"assets tuile\/asset\/Objects.tsx"
+        }, 
+        {
+         "firstgid":145,
+         "source":"assets tuile\/asset\/SlopesAndStairs.tsx"
+        }, 
+        {
+         "firstgid":185,
+         "source":"assets tuile\/asset\/Trees.tsx"
+        }],
+ "tilewidth":256,
+ "type":"map",
+ "version":"1.10",
+ "width":11
+}
