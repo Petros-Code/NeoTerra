@@ -1,5 +1,4 @@
 /* Style harmonisé pour les sections game et endSection */
-#game,
 #endSection {
   background: linear-gradient(120deg, #009e60 0%, #0066b3 100%);
   color: #fff;
@@ -280,4 +279,121 @@ body {
 
 .accueil-footer a:hover {
   text-decoration: underline;
+}
+
+/** dice **/
+
+.dice {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  transform-style: preserve-3d;
+  transition: 1s ease;
+}
+
+@keyframes rolling {
+  50% {
+    transform: rotateX(455deg) rotateY(455deg);
+  }
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 3px solid #f6f3f0;
+  transform-style: preserve-3d;
+  background: linear-gradient(145deg, #dddbd8, #fff);
+}
+a .face::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: #f6f3f0;
+  transform: translateZ(-1px);
+}
+
+.face::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #131210;
+}
+
+.front {
+  transform: translateZ(25px);
+}
+
+.back {
+  transform: rotateX(180deg) translateZ(25px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(25px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(25px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(25px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(25px);
+}
+
+.front::after {
+  width: 16px;
+  height: 16px;
+  background: #f63330;
+  margin: -8px 0 0 -8px;
+}
+
+.back::after {
+  margin: -18px 0 0 -15px;
+  box-shadow: 20px 0, 0 12px, 20px 12px, 0 24px, 20px 24px;
+}
+
+.top::after {
+  margin: -15px 0 0 -15px;
+  box-shadow: 20px 20px;
+}
+
+.bottom::after {
+  margin: -18px 0 0 -18px;
+  box-shadow: 13px 13px, 26px 26px, 26px 0, 0 26px;
+}
+
+.right::after {
+  margin: -15px 0 0 -15px;
+  box-shadow: 20px 0, 0 20px, 20px 20px;
+}
+
+.left::after {
+  margin: -18px 0 0 -18px;
+  box-shadow: 13px 13px, 26px 26px;
+}
+
+.roll {
+  cursor: pointer;
+  color: #b33951;
+  margin-top: 60px;
+  padding: 6px 12px;
+  border-radius: 3px;
+  border: 2px solid #b33951;
+  transition: 0.4s;
+}
+
+.roll:hover {
+  color: #fff;
+  background: #b33951;
 }
