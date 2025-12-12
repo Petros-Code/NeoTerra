@@ -1,6 +1,7 @@
 export function rollDice() {
   const dice = document.querySelector(".dice");
   const rollBtn = document.querySelector(".roll");
+  const rollDiceOnClick = document.querySelector("#dice");
 
   const randomDice = () => {
     const random = Math.floor(Math.random() * 10);
@@ -47,4 +48,5 @@ export function rollDice() {
   };
 
   rollBtn.addEventListener("click", randomDice);
+  rollDiceOnClick.addEventListener("click", randomDice);
 }
