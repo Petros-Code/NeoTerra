@@ -14,7 +14,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/style.css" />
-    <script type="module" src="src/rollDice.js" defer></script>
   </head>
   <body>
     <section class="accueil-hero">
@@ -38,18 +37,19 @@
         économiques de la région.<br />
         Découvrez les 6 ambitions de Néo Terra et devenez acteur du changement.
       </p>
-      <button class="accueil-jouer" id="btnAccueilJouer roll">Jouer</button>
-      <section class="dice">
+      <button class="accueil-jouer" id="btnAccueilJouer">Jouer</button>
+    </main>
+    <section id="game" style="display: none">
+      <button class="roll">Lancer le dé</button>
+      <button id="endButton">Partie terminée</button>
+      <div class="dice">
         <div class="face front"></div>
         <div class="face back"></div>
         <div class="face top"></div>
         <div class="face bottom"></div>
         <div class="face right"></div>
         <div class="face left"></div>
-      </section>
-    </main>
-    <section id="game" style="display: none">
-      <button id="endButton">Partie terminée</button>
+      </div>
     </section>
 
     <section id="endSection" style="display: none">
