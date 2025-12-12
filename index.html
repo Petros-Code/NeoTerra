@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeoTerra - Accueil</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-B4xivW4J.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Ey1HMU0b.css">
+  </head>
+  <body>
+    <section class="accueil-hero">
+      <img
+        src="https://www.neo-terra.fr/wp-content/themes/yootheme/cache/04/NeoTerra_Complet_NOIR-04621b84.webp"
+        alt="Logo NeoTerra Blanc"
+        class="logo-hero logo-hero-top"
+      />
+      <div class="hero-texte-centre">
+        <h1>NÉO TERRA: Le Jeu</h1>
+        <p>
+          Le jeu de culture générale inspiré de Trivial Pursuit<br />pour la
+          transition écologique en Nouvelle-Aquitaine.
+        </p>
+      </div>
+    </section>
+    <main class="accueil-main">
+      <h2>Jouez, apprenez, agissez !</h2>
+      <p>
+        Testez vos connaissances sur les enjeux environnementaux, sociaux et
+        économiques de la région.<br />
+        Découvrez les 6 ambitions de Néo Terra et devenez acteur du changement.
+      </p>
+      <button class="accueil-jouer" id="btnAccueilJouer">Jouer</button>
+    </main>
+    <section id="game" style="display: none">
+      <button class="roll">Lancer le dé</button>
+      <button id="endButton">Partie terminée</button>
+      <div class="dice" id="dice">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+      </div>
+    </section>
+
+    <section id="endSection" style="display: none">
+      <h2>Félicitations !</h2>
+      <p>Vous avez terminé la partie. Merci d'avoir joué à Néo Terra !</p>
+      <button id="restartButton">Recommencer</button>
+    </section>
+
+    <footer class="accueil-footer">
+      <span class="footer-inline">
+        <a
+          href="https://www.neo-terra.fr/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Découvrir NeoTerra</a
+        >
+        &nbsp;|&nbsp;©2025 Région Nouvelle-Aquitaine
+      </span>
+    </footer>
+  </body>
+</html>
