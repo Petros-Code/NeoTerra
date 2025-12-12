@@ -20,3 +20,6 @@ dist/
 build/
 *.local
 
+package-lock.json
+*.env
+*.css.map
