@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="isometric" renderorder="right-down" width="11" height="11" tilewidth="256" tileheight="128" infinite="0" nextlayerid="5" nextobjectid="1">
+ <tileset firstgid="1" name="Trees" tilewidth="256" tileheight="512" tilecount="12" columns="6">
+  <image source="C:/Users/marti/Desktop/Dev/Games/Isometric Asset Pack/256x512 Trees.png" width="1536" height="1024"/>
+ </tileset>
+ <tileset firstgid="13" name="Tiles" tilewidth="256" tileheight="192" tilecount="90" columns="10">
+  <image source="C:/Users/marti/Desktop/Dev/Games/Isometric Asset Pack/256x192 Tiles.png" width="2560" height="1728"/>
+ </tileset>
+ <tileset firstgid="103" name="Floorings" tilewidth="256" tileheight="152" tilecount="30" columns="10">
+  <image source="C:/Users/marti/Desktop/Dev/Games/Isometric Asset Pack/256x152 Floorings.png" width="2560" height="456"/>
+ </tileset>
+ <tileset firstgid="133" name="Objects" tilewidth="256" tileheight="256" tilecount="24" columns="8">
+  <image source="C:/Users/marti/Desktop/Dev/Games/Isometric Asset Pack/256x256 Objects.png" width="2048" height="768"/>
+ </tileset>
+ <layer id="1" name="Ground" width="11" height="11">
+  <data encoding="csv">
+13,13,13,13,13,13,13,13,13,13,13,
+13,13,13,13,13,13,13,13,13,13,13,
+13,13,13,13,13,13,13,13,13,13,13,
+13,13,13,13,13,13,13,13,13,13,13,
+13,13,13,13,13,13,13,13,13,37,37,
+13,13,13,13,13,13,13,13,13,37,23,
+13,13,13,13,13,13,13,13,13,37,23,
+13,13,13,13,13,13,13,13,13,37,23,
+13,13,13,13,13,13,13,13,37,37,23,
+13,13,13,13,13,13,37,37,37,23,23,
+13,13,13,13,13,37,37,23,23,23,23
+</data>
+ </layer>
+ <layer id="2" name="Parcours" width="11" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,129,76,80,57,78,74,39,0,0,0,
+0,0,0,0,0,0,0,76,0,0,0,
+0,0,0,39,76,80,0,80,0,0,0,
+0,0,0,74,0,129,0,57,0,0,0,
+0,0,0,78,0,0,0,78,0,0,0,
+0,0,0,57,80,76,39,74,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Object" width="11" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,142,0,
+0,0,0,0,0,0,0,0,0,142,0,
+0,0,0,0,0,0,0,0,146,144,0,
+0,0,0,0,0,0,141,141,144,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Trees" width="11" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,4,0,0,
+0,0,0,0,0,0,0,0,0,4,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+4,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,
+4,0,0,0,0,0,0,0,0,0,0,
+0,0,4,0,0,0,0,0,0,0,0,
+4,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>
