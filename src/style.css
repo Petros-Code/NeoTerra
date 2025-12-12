@@ -341,7 +341,8 @@ a .face::before {
 }
 
 .left::after {
-  margin: -35px 0 0 -30px;
+  margin: -35px 0 0 -35px;
+  box-shadow: 25px 25px, 50px 50px;
 }
 
 .roll {
