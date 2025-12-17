@@ -8,7 +8,8 @@
 				"Améliorer l'accès aux transports",
 				"Développer l'industrie régionale",
 				"Réduire l'usage des technologies"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 1,
@@ -18,7 +19,8 @@
 				"Santé énergétique",
 				"Santé environnementale seulement",
 				"Santé urbaine"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 2,
@@ -28,7 +30,8 @@
 				"Les augmenter de 20 %",
 				"Les supprimer totalement",
 				"Ne pas intervenir sur ce domaine"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 3,
@@ -38,12 +41,14 @@
 				"Les fermer progressivement",
 				"Les éloigner des enjeux environnementaux",
 				"Supprimer leurs financements"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 4,
 			"q": "Quel outil évalue l'impact des projets financés sur l'environnement, l'économie et le social ?",
-			"r": ["Le budget vert", "Le plan alimentaire", "Le fonds innovation", "Le plan numérique"]
+			"r": ["Le budget vert", "Le plan alimentaire", "Le fonds innovation", "Le plan numérique"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 5,
@@ -53,7 +58,8 @@
 				"Réduire les services vétérinaires ruraux",
 				"Fermer les cabinets vétérinaires",
 				"Supprimer les formations vétérinaires"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 6,
@@ -63,7 +69,8 @@
 				"Uniquement thérapeutiques",
 				"Sans diagnostic nécessaire",
 				"Sans approche préventive"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 7,
@@ -73,7 +80,8 @@
 				"Supprimer la dimension santé dans les financements",
 				"Financer uniquement des projets industriels",
 				"Limiter l'analyse aux projets agricoles"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 8,
@@ -83,7 +91,8 @@
 				"La communauté des transports verts",
 				"La communauté du climat",
 				"La communauté numérique"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 9,
@@ -93,7 +102,8 @@
 				"Augmenter les élevages intensifs",
 				"Ignorer la santé animale",
 				"Réduire les contrôles vétérinaires"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 10,
@@ -103,7 +113,8 @@
 				"Former uniquement des professionnels de santé humaine",
 				"Développer des infrastructures numériques",
 				"Séparer les approches humaines et animales"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 11,
@@ -113,7 +124,8 @@
 				"Augmenter le nombre d'antibiotiques utilisés",
 				"Réduire la surveillance des animaux sauvages",
 				"Supprimer les études sur les vecteurs de maladies"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 12,
@@ -123,7 +135,8 @@
 				"Encourager les aliments ultra-transformés",
 				"Développer l'importation massive de produits",
 				"Réduire la consommation de fruits et légumes"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 13,
@@ -133,7 +146,8 @@
 				"Augmenter la consommation énergétique",
 				"Supprimer les normes environnementales",
 				"Diminuer la présence de recyclage"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 14,
@@ -143,7 +157,8 @@
 				"Les pratiques d'élevage intensif",
 				"Les pratiques entièrement chimiques",
 				"Les monocultures obligatoires"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 15,
@@ -153,7 +168,8 @@
 				"Pour baisser les coûts de production",
 				"Pour accélérer la croissance animale",
 				"Pour remplacer les vétérinaires"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 16,
@@ -163,7 +179,8 @@
 				"Réduire les mesures de qualité de l'air",
 				"Supprimer les normes de ventilation",
 				"Augmenter l'usage des combustibles fossiles"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 17,
@@ -173,7 +190,8 @@
 				"L'augmentation des déchets plastiques",
 				"La suppression des espaces verts",
 				"La réduction des activités de prévention"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 18,
@@ -183,7 +201,8 @@
 				"Ignorer les impacts du climat",
 				"Développer uniquement des cures thermales",
 				"Augmenter les émissions polluantes"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 19,
@@ -193,13 +212,29 @@
 				"Supprimer les campagnes d'information",
 				"Arrêter les recherches sur les vecteurs",
 				"Encourager leur prolifération naturelle"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		}
 	],
 	"natural_resources": [
-		{ "id": 20, "q": "Les activités humaines impactent l'environnement", "r": ["Oui", "Non"] },
-		{ "id": 21, "q": "L'etat actuel des ressources naturelles est préoccupant", "r": ["Oui", "Non"] },
-		{ "id": 22, "q": "La diversités des ecosystèmes en nouvelle aquitaine va bien", "r": ["Non", "Oui"] },
+		{
+			"id": 20,
+			"q": "Les activités humaines impactent l'environnement",
+			"r": ["Oui", "Non"],
+			"url": "https://www.neo-terra.fr/"
+		},
+		{
+			"id": 21,
+			"q": "L'etat actuel des ressources naturelles est préoccupant",
+			"r": ["Oui", "Non"],
+			"url": "https://www.neo-terra.fr/"
+		},
+		{
+			"id": 22,
+			"q": "La diversités des ecosystèmes en nouvelle aquitaine va bien",
+			"r": ["Non", "Oui"],
+			"url": "https://www.neo-terra.fr/"
+		},
 		{
 			"id": 23,
 			"q": "Objectif de Neo-Terra sur le sujet de l'eau ?",
@@ -207,17 +242,20 @@
 				"Préserver et restaurer la qualité écologique des milieux humides",
 				"Modifier chimiquement l'eau afin de supprimer toute pollution",
 				"Demander à tout le monde de prendre sa douche sous la pluie"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 24,
 			"q": "L'eau devient de plus en plus rare",
-			"r": ["Oui, c'est inquiétant", "Oui, mais ça va", "Non"]
+			"r": ["Oui, c'est inquiétant", "Oui, mais ça va", "Non"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 25,
 			"q": "L'action de Neo-Terra a permis une baisse de 50% des prélevements d'eau des industriels entre 2012 et 2020'",
-			"r": ["Non, seulement de 25%", "Oui", "Non"]
+			"r": ["Non, seulement de 25%", "Oui", "Non"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 26,
@@ -227,7 +265,8 @@
 				"Planter des arbres dans son jardin",
 				"Mettre les industriels en prison",
 				"Devenir religieux et prier pour que tout s'arrange"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 27,
@@ -237,46 +276,54 @@
 				"Diminuer de 30% les consommations énergetiques par rapport à 2010",
 				"Viser 50% d'energie renouvelables en 2030",
 				"Accompagner les entreprises pour diminuer leur consommation energétique"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 28,
 			"q": "Combien de territoires se sont engagés pour la nature depuis 2019 ?",
-			"r": ["185", "26", "150", "89"]
+			"r": ["185", "26", "150", "89"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 29,
 			"q": "En quelle année à été adopté la Stratégie Régionale Biodiversité ?",
-			"r": ["2022", "2012", "2019", "Elle n'a pas encore été adoptée"]
+			"r": ["2022", "2012", "2019", "Elle n'a pas encore été adoptée"],
+			"url": "https://www.neo-terra.fr/"
 		}
 	],
 	"economie": [
 		{
 			"id": 30,
 			"q": "Néo Terra cherche à réduire la consommation énergétique des entreprises en Nouvelle-Aquitaine pour favoriser une économie responsable.",
-			"r": ["Vrae", "Faux"]
+			"r": ["Vrae", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 31,
 			"q": "Le plan prévoit de diminuer la consommation d'eau industrielle de 50 % dans la région.",
-			"r": ["Vrae", "Faux"]
+			"r": ["Vrae", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 32,
 			"q": "Néo Terra promeut uniquement l'innovation technologique, sans s'intéresser aux formes d'innovation sociale ou au développement de l'économie solidaire.",
 			"r": ["Faux", "Vrae"],
+			"url": "https://www.neo-terra.fr/",
 			"expl": "Le plan inclut aussi l'innovation sociale et l'économie sociale et solidaire (ESS)"
 		},
 		{
 			"id": 33,
 			"q": "Néo Terra ignore la dimension sociale de l'économie : elle ne vise pas à améliorer l'emploi ni la formation des travailleurs.",
 			"r": ["Faux", "Vrae"],
+			"url": "https://www.neo-terra.fr/",
 			"expl": "Au contraire, le plan vise à adapter la formation, encourager les reconversions et soutenir l'emploi de proximité"
 		},
 		{
 			"id": 34,
 			"q": "L'un des objectifs est de favoriser le report modal vers des transports moins polluants pour la logistique, comme le rail ou le transport fluvial. ",
-			"r": ["Vrae", "Faux"]
+			"r": ["Vrae", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		}
 	],
 	"agriculture": [
@@ -284,65 +331,77 @@
 			"id": 35,
 			"q": "Néo Terra encourage l'augmentation des émissions de gaz à effet de serre pour booster la production.",
 			"r": ["Faux", "Vrae"],
+			"url": "https://www.neo-terra.fr/",
 			"expl": "Le plan vise au contraire à les réduire"
 		},
 		{
 			"id": 36,
 			"q": "Le plan de Néo Terra prévoit la suppression des pesticides de synthèse d'ici 2030.",
-			"r": ["Vrae", "Faux"]
+			"r": ["Vrae", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 37,
 			"q": "Le plan encourage la transmission des exploitations et l'amélioration des conditions de travail pour attirer de nouveaux agriculteurs.",
-			"r": ["Vrae", "Faux"]
+			"r": ["Vrae", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 38,
 			"q": "La réduction de la distance entre la production et la consommation n'est pas une priorité de Néo Terra.",
 			"r": ["Faux", "Vrae"],
+			"url": "https://www.neo-terra.fr/",
 			"expl": "C'est une priorité importante"
 		},
 		{
 			"id": 39,
 			"q": "Question text",
-			"r": ["Option 1 (qui est bon)", "Option 2", "Option 3"]
+			"r": ["Option 1 (qui est bon)", "Option 2", "Option 3"],
+			"url": "https://www.neo-terra.fr/"
 		}
 	],
 	"mobilite_habitation": [
 		{
 			"id": 40,
 			"q": "En Nouvelle-Aquitaine combien représentent en % les émissions de gaz à effet de serres?",
-			"r": ["38", "16", "32", "44"]
+			"r": ["38", "16", "32", "44"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 41,
 			"q": "Les offres ferroviaires sont elles en hausse ?",
-			"r": ["Vrai", "Faux"]
+			"r": ["Vrai", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 42,
 			"q": "Faciliter l'accès au logement pour les jeunes est il un enjeu de la région ?",
-			"r": ["Oui", "Non"]
+			"r": ["Oui", "Non"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 43,
 			"q": "Combien de territoires sont engagés pour la revitalisation des centres-bourgs?",
-			"r": ["36", "70", "50", "102"]
+			"r": ["36", "70", "50", "102"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 44,
 			"q": "Lutter contre les ilôts de chaleur est il prévu ?",
-			"r": ["Oui", "Non"]
+			"r": ["Oui", "Non"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 45,
 			"q": "Combien de dossier par an contribuent à l'attenuation des risques?",
-			"r": ["35", "40", "25", "30"]
+			"r": ["35", "40", "25", "30"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 46,
 			"q": "En 2023 combien de projet portent les ambitions de Neo Terra ?",
-			"r": ["40 %", "50%", "60%", "30%"]
+			"r": ["40 %", "50%", "60%", "30%"],
+			"url": "https://www.neo-terra.fr/"
 		}
 	],
 	"solidarite": [
@@ -354,12 +413,14 @@
 				"Renforcer la justice sociale et lutter contre les inégalités",
 				"Encourager la construction de routes",
 				"Développer le tourisme"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 48,
 			"q": "Quel public est particulièrement ciblé par cette ambition ?",
-			"r": ["Les touristes", "Les jeunes et étudiants", "Les sportifs professionnels", "Les retraités fortunés"]
+			"r": ["Les touristes", "Les jeunes et étudiants", "Les sportifs professionnels", "Les retraités fortunés"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 49,
@@ -369,7 +430,8 @@
 				"Aggravation des inégalités sociales",
 				"Des autoroutes inutiles",
 				"Trop de recyclage"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 50,
@@ -379,7 +441,8 @@
 				"Fournir du matériel informatique aux étudiants",
 				"Construire des centres commerciaux",
 				"Financer le transport aérien"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 51,
@@ -389,57 +452,68 @@
 				"La création d'aéroports",
 				"La production d'énergie nucléaire",
 				"Le soutien au tourisme"
-			]
+			],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 52,
 			"q": "Néo Terra veut une transition écologique qui n'exclut personne.",
-			"r": ["Vrai", "Faux"]
+			"r": ["Vrai", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 53,
 			"q": "L'ambition Solidarités concerne uniquement la santé.",
-			"r": ["Vrai", "Faux"]
+			"r": ["Vrai", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 54,
 			"q": "Le soutien au logement des jeunes fait partie des actions de Solidarités.",
-			"r": ["Vrai", "Faux"]
+			"r": ["Vrai", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 55,
 			"q": "L'ambition Solidarités veut réduire les inégalités territoriales.",
-			"r": ["Vrai", "Faux"]
+			"r": ["Vrai", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 56,
 			"q": "La précarité numérique des étudiants n'est pas une priorité dans Néo Terra.",
-			"r": ["Vrai", "Faux"]
+			"r": ["Vrai", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 57,
 			"q": "La solidarité vise aussi à faciliter l'accès à la mobilité pour tous.",
-			"r": ["Vrai", "Faux"]
+			"r": ["Vrai", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 58,
 			"q": "Le soutien aux associations fait partie de l'ambition Solidarités.",
-			"r": ["Vrai", "Faux"]
+			"r": ["Vrai", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 59,
 			"q": "L'ambition Solidarités cherche à améliorer l'accès aux soins.",
-			"r": ["Vrai", "Faux"]
+			"r": ["Vrai", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 60,
 			"q": "Les personnes en situation de handicap ne sont pas concernées par cette ambition.",
-			"r": ["Vrai", "Faux"]
+			"r": ["Vrai", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		},
 		{
 			"id": 61,
 			"q": "La lutte contre la pauvreté est un axe important de la solidarité dans Néo Terra.",
-			"r": ["Vrai", "Faux"]
+			"r": ["Vrai", "Faux"],
+			"url": "https://www.neo-terra.fr/"
 		}
 	]
 }
