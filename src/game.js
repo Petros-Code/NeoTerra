@@ -19,13 +19,6 @@ class GameScene extends Phaser.Scene {
 		this.load.image("256x192 Tiles.png", "/assets/256x192 Tiles.png");
 		this.load.image("256x152 Floorings.png", "/assets/256x152 Floorings.png");
 		this.load.image("256x256 Objects.png", "/assets/256x256 Objects.png");
-
-		this.q_manager = new QuestionManager();
-		this.q_manager.fetch_questions().then((r) => {
-			const cat = this.q_manager.get_categories();
-			console.log(this.q_manager.get_question(cat[0]));
-			console.log(this.q_manager.get_question(cat[0]));
-		});
 	}
 
 	create() {
