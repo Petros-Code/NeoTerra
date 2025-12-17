@@ -1,4 +1,4 @@
-import { GameSection } from "./gameSection.js";
+import { GameSection } from "./gamesection.js";
 import { EndSection } from "./endSection.js";
 import { rollDice } from "./rollDice.js";
 
