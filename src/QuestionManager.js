@@ -1,20 +1,19 @@
 export default class QuestionManager {
 	questions;
 	questions_asked = [];
-	colors = ["red", "green", "yellow", "lime", "orange", "blue"];
-	color_cat = {};
+	color_cat = {
+		sante: "blue",
+		natural_resources: "green",
+		economie: "violet",
+		agriculture: "orange",
+		mobilite_habitation: "yellow",
+		solidarite: "pink",
+	};
 
 	// Fetch questions from json
 	async fetch_questions() {
 		const q = await fetch("../assets/questions.json");
 		this.questions = await q.json();
-
-		// Assign default colors to categories
-		let i = 0;
-		for (const category in this.questions) {
-			this.color_cat[category] = this.colors[i];
-			i++;
-		}
 	}
 
 	// Set color for a category
@@ -32,15 +31,27 @@ export default class QuestionManager {
 		this.questions_asked = [];
 	}
 
-	// Get all categories
-	get_categories() {
-		return Object.keys(this.questions);
+	// Get category from color
+	get_category(color) {
+		for (const [category, c] of Object.entries(this.color_cat)) {
+			if (c == color) return category;
+		}
+		return null;
 	}
 
 	// Get a random non-asked question from category
-	get_question(category) {
+	get_question(color) {
+		// Get category from color
+		const category = this.get_category(color);
+
+		if (!category) {
+			console.error(`No matching color found for ${color}`);
+			return;
+		}
+
 		// Current possible questions to be asked
 		const current_questions = this.questions[category].filter((q) => !this.questions_asked.includes(q["id"]));
+		console.log(current_questions.length);
 
 		// Random question
 		const random_question = current_questions[Math.floor(Math.random() * current_questions.length)];
