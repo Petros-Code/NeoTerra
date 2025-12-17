@@ -1,10 +1,7 @@
 import Phaser from "phaser";
-import QuestionManager from "./QuestionManager";
 
 // Classe de scène pour le jeu
 class GameScene extends Phaser.Scene {
-	manager;
-
 	constructor() {
 		super({ key: "GameScene" });
 	}
