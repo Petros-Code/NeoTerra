@@ -1,14 +1,8 @@
+import color_cat from "./colors.js";
+
 export default class QuestionManager {
 	questions;
 	questions_asked = [];
-	color_cat = {
-		sante: "blue",
-		natural_resources: "green",
-		economie: "violet",
-		agriculture: "orange",
-		mobilite_habitation: "yellow",
-		solidarite: "pink",
-	};
 
 	// Fetch questions from json
 	async fetch_questions() {
