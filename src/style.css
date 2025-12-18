@@ -68,26 +68,7 @@ body {
     overflow: hidden;
     z-index: 0;
   }
-  .carousel-track {
-    display: flex;
-    width: 500%;
-    height: 100%;
-    animation: carouselMove 30s linear infinite;
-  }
-  .carousel-track img {
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.7;
-  }
-  @keyframes carouselMove {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-80vw);
-    }
-  }
+
   position: relative;
   z-index: 1;
   display: flex;
@@ -400,4 +381,34 @@ a .face::before {
 .roll:hover {
   color: #fff;
   background: #b33951;
+}
+
+/* Modal */
+
+/* Fond */
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  color: #009e60;
+  padding: 5px;
+}
+
+/* Bloc modal */
+.modalBloc {
+  background: white;
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+
+  .listReponse {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    padding: 4px;
+  }
 }

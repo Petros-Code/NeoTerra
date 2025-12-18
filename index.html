@@ -50,13 +50,36 @@
         <div class="face right"></div>
         <div class="face left"></div>
       </div>
-    </section>
-
+    </section id="sectionModal" >
+   
     <section id="endSection" style="display: none">
       <h2>Félicitations !</h2>
       <p>Vous avez terminé la partie. Merci d'avoir joué à Néo Terra !</p>
       <button id="restartButton">Recommencer</button>
     </section>
+    
+
+      <!-- Debut Modal -->
+      <!-- Btn question -->
+      <button id="openBtn">Modal</button>
+
+      <!-- Modal bloc-->
+      <div class="modal" id="modal">
+        <div class="modalBloc">
+          <div class="listReponse">
+            <h3>Question: ................... ?</h3>
+            <h3>Réponses : </h3>
+            <label><input type="checkbox" value="" />1</label>
+            <label><input type="checkbox" value="" />2</label>
+            <label><input type="checkbox" value="" />3</label>
+            <label><input type="checkbox" value="" />3</label>
+          </div>
+          <button id="closeBtn">Fermer</button>
+        </div>
+      </div>
+      <!-- FIN Modal -->
+    </section>
+ 
 
     <footer class="accueil-footer">
       <span class="footer-inline">
@@ -70,5 +93,6 @@
       </span>
     </footer>
     <script type="module" src="./src/main.js"></script>
+    <script src="./src/modal.js"></script>
   </body>
 </html>
