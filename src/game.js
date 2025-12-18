@@ -73,7 +73,7 @@ class GameScene extends Phaser.Scene {
       return;
     }
 
-    // Créer les calques
+    // Créer les calques (Eng: Tileset)
     this.finishMapCreation(map, tileWidth, tileHeight, tilesets);
   }
 
@@ -165,8 +165,6 @@ class GameScene extends Phaser.Scene {
           y: tile.getCenterY(),
           tileIndex: tile.index,
           tileset: tile.tileset?.name || "unknown",
-          color: null,
-          order: null,
         });
       }
     });
@@ -248,6 +246,7 @@ class GameScene extends Phaser.Scene {
 
     let localTile = 0;
 
+    // Deplace le Pion au hazard quand "Enter" est appuyer
     window.addEventListener("keydown", (e) => {
       if (e.code === "Enter") {
         const randomMovement = Math.floor(Math.random() * 6 + 1);
