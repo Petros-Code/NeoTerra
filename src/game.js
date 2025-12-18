@@ -207,7 +207,9 @@ class GameScene extends Phaser.Scene {
       tileItem.tileColor = colorsOrderArray[colorIndex];
       colorIndex++;
     });
+
     console.log("manualOrdering:", manualOrdering);
+
     // Application de l'Ordre du chemin en donnant le tableau organiser
     const orderedPaths = manualOrdering
       .map((entry, orderIndex) => {
