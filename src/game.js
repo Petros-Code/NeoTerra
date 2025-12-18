@@ -150,6 +150,7 @@ class GameScene extends Phaser.Scene {
   pathLogic(pathTilesJson) {
     // Le Pions du joueur
     const player = this.add.image(0, 0, "playerTile");
+    player.setOrigin(0.5, 1);
     player.setDepth(1000); // au-dessus de la tuile
 
     // Tableau qui va contenir les données du chemin
@@ -170,11 +171,11 @@ class GameScene extends Phaser.Scene {
       }
     });
 
-    console.log("RAW PATHS:", movingPaths);
+    console.info("RAW PATHS:", movingPaths);
 
     // Définition manuel de l'Ordre de lecture du tableau contenant les tuiles de chemins, ainsi que les infos de couleurs
     const manualOrdering = [
-      { tileNum: 0, tileColor: "" },
+      { tileNum: 0 },
       { tileNum: 1, tileColor: "" },
       { tileNum: 2, tileColor: "" },
       { tileNum: 3, tileColor: "" },
@@ -195,20 +196,32 @@ class GameScene extends Phaser.Scene {
       { tileNum: 8, tileColor: "" },
       { tileNum: 9, tileColor: "" },
       { tileNum: 10, tileColor: "" },
-      { tileNum: 13, tileColor: "" }, // 22 ème
+      { tileNum: 13 }, // 22 ème
     ];
 
-    const colorsOrderArray = ["red", "blue"];
+    const colorsOrderArray = [
+      "purple",
+      "yellow",
+      "green",
+      "orange",
+      "blue",
+      "pink",
+    ];
     let colorIndex = 0;
 
-    manualOrdering.forEach((tileItem) => {
+    // Chaque tuile à une couleur
+    manualOrdering.forEach((tileItem, index) => {
+      // Ignore la première et dernière tuile (Spawn & Finish tiles)
+      if (index === 0 || index === manualOrdering.length - 1) {
+        return;
+      }
+
       colorIndex = colorIndex === colorsOrderArray.length ? 0 : colorIndex;
-      console.log(tileItem);
       tileItem.tileColor = colorsOrderArray[colorIndex];
       colorIndex++;
     });
 
-    console.log("manualOrdering:", manualOrdering);
+    console.info("manualOrdering:", manualOrdering);
 
     // Application de l'Ordre du chemin en donnant le tableau organiser
     const orderedPaths = manualOrdering
@@ -228,13 +241,25 @@ class GameScene extends Phaser.Scene {
       })
       .filter(Boolean);
 
-    console.log("ORDERED PATH:", orderedPaths);
+    console.info("ORDERED PATH:", orderedPaths);
 
-    // Déplacer le pion du joueur pour tester le chemin
-    orderedPaths.forEach((path, i) => {
-      setTimeout(() => {
-        player.setPosition(path.x + 0, path.y + -35);
-      }, i * 1000); // 1 second per tile
+    // Default position
+    player.setPosition(orderedPaths[0].x, orderedPaths[0].y);
+
+    let localTile = 0;
+
+    window.addEventListener("keydown", (e) => {
+      if (e.code === "Enter") {
+        const randomMovement = Math.floor(Math.random() * 6 + 1);
+        localTile += randomMovement;
+        // Si le chiffre de déplacement déplace le nombre de movement max, fixer en mettant stopper à la fin.
+        localTile =
+          localTile >= orderedPaths.length
+            ? orderedPaths.length - 1
+            : localTile;
+        const localPlayerPos = orderedPaths[localTile];
+        player.setPosition(localPlayerPos.x, localPlayerPos.y);
+      }
     });
   }
 }
