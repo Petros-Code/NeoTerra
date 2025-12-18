@@ -16,6 +16,9 @@ class GameScene extends Phaser.Scene {
     this.load.image("256x192 Tiles.png", "/assets/256x192 Tiles.png");
     this.load.image("256x152 Floorings.png", "/assets/256x152 Floorings.png");
     this.load.image("256x256 Objects.png", "/assets/256x256 Objects.png");
+
+    // Charge les images de piece pour le joueur
+    this.load.image("playerTile", "/assets/images/pieces/p_white.png");
   }
 
   create() {
@@ -141,15 +144,18 @@ class GameScene extends Phaser.Scene {
     this.cameras.main.setScroll(scrollX, scrollY);
     // #endregion Settings
 
-    // -------------------------------------------------------------------
-    // --- TEST PLAYER IMAGE (inside Phaser canvas) ---
-    const player = this.add.rectangle(0, 0, 30, 30, 0xff0000);
-    player.setDepth(1000); // always above tiles
+    this.pathLogic(parcoursLayer);
+  }
 
-    // --- EXTRACT FULL PATH DATA ---
+  pathLogic(pathTilesJson) {
+    // Le Pions du joueur
+    const player = this.add.image(0, 0, "playerTile");
+    player.setDepth(1000); // au-dessus de la tuile
+
+    // Tableau qui va contenir les données du chemin
     const movingPaths = [];
 
-    parcoursLayer.forEachTile((tile) => {
+    pathTilesJson.forEachTile((tile) => {
       if (tile.index !== -1) {
         movingPaths.push({
           tileX: tile.x,
@@ -166,7 +172,7 @@ class GameScene extends Phaser.Scene {
 
     console.log("RAW PATHS:", movingPaths);
 
-    // --- MANUAL ORDER + COLOR DEFINITION ---
+    // Définition manuel de l'Ordre de lecture du tableau contenant les tuiles de chemins, ainsi que les infos de couleurs
     const manualOrdering = [
       { tileNum: 0, tileColor: "" },
       { tileNum: 1, tileColor: "" },
@@ -189,10 +195,20 @@ class GameScene extends Phaser.Scene {
       { tileNum: 8, tileColor: "" },
       { tileNum: 9, tileColor: "" },
       { tileNum: 10, tileColor: "" },
-      { tileNum: 13, tileColor: "" }, // 22nd tile
+      { tileNum: 13, tileColor: "" }, // 22 ème
     ];
 
-    // --- BUILD ORDERED PATH ---
+    const colorsOrderArray = ["red", "blue"];
+    let colorIndex = 0;
+
+    manualOrdering.forEach((tileItem) => {
+      colorIndex = colorIndex === colorsOrderArray.length ? 0 : colorIndex;
+      console.log(tileItem);
+      tileItem.tileColor = colorsOrderArray[colorIndex];
+      colorIndex++;
+    });
+    console.log("manualOrdering:", manualOrdering);
+    // Application de l'Ordre du chemin en donnant le tableau organiser
     const orderedPaths = manualOrdering
       .map((entry, orderIndex) => {
         const tile = movingPaths[entry.tileNum];
@@ -212,10 +228,10 @@ class GameScene extends Phaser.Scene {
 
     console.log("ORDERED PATH:", orderedPaths);
 
-    // --- MOVE PLAYER ALONG MANUAL ORDER ---
+    // Déplacer le pion du joueur pour tester le chemin
     orderedPaths.forEach((path, i) => {
       setTimeout(() => {
-        player.setPosition(path.x, path.y);
+        player.setPosition(path.x + 0, path.y + -35);
       }, i * 1000); // 1 second per tile
     });
   }
