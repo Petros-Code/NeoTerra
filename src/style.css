@@ -1,3 +1,5 @@
+@import "./modal.css";
+
 /* Style harmonisé pour les sections game et endSection */
 #endSection {
   background: linear-gradient(120deg, #009e60 0%, #0066b3 100%);
