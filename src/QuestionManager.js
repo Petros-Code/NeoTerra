@@ -1,5 +1,6 @@
 import color_cat from "./colors.js";
 
+// Manages question fetch and access
 export default class QuestionManager {
 	questions;
 	questions_asked = [];
