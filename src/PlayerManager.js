@@ -27,11 +27,17 @@ export default class PlayerManager {
 		const player = this.get_player(player_id);
 		player.color_done(color);
 	}
+
+	set_failed(player_id, fail) {
+		const player = this.get_player(player_id);
+		player.has_failed = fail;
+	}
 }
 
 class Player {
 	id;
 	name = "";
+	has_failed = false;
 	done = [];
 
 	constructor(id, name) {
