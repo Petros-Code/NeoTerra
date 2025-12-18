@@ -5,9 +5,11 @@ export function rollDice() {
   const randomDice = () => {
     const random = Math.floor(Math.random() * 10);
     if (random >= 1 && random <= 6) {
-      rollDice(random);
+      const result = rollDice(random);
+      console.log("Résultat du dé:", result);
+      return result;
     } else {
-      randomDice();
+      return randomDice();
     }
   };
 
@@ -44,6 +46,7 @@ export function rollDice() {
       }
       dice.style.animation = "none";
     }, 4050);
+    return random;
   };
 
   rollBtn.addEventListener("click", randomDice);
