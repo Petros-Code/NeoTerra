@@ -7,18 +7,19 @@ class GameScene extends Phaser.Scene {
   }
 
   preload() {
+    const base = import.meta.env.BASE_URL || "/";
+
     // Charger le fichier de map directement avec tilemapTiledJSON
-    this.load.tilemapTiledJSON("map", "/assets/Map.tmj");
+    this.load.tilemapTiledJSON("map", `${base}assets/Map.tmj`);
 
     // Charger les images des tilesets selon les noms dans Map.tmj
-    // Les chemins dans Map.tmj sont "../Isometric Asset Pack/..." mais on les charge depuis /assets/
-    this.load.image("256x512 Trees.png", "/assets/256x512 Trees.png");
-    this.load.image("256x192 Tiles.png", "/assets/256x192 Tiles.png");
-    this.load.image("256x152 Floorings.png", "/assets/256x152 Floorings.png");
-    this.load.image("256x256 Objects.png", "/assets/256x256 Objects.png");
-
+    this.load.image("256x512 Trees.png", `${base}assets/256x512 Trees.png`);
+    this.load.image("256x192 Tiles.png", `${base}assets/256x192 Tiles.png`);
+    this.load.image("256x152 Floorings.png", `${base}assets/256x152 Floorings.png`);
+    this.load.image("256x256 Objects.png", `${base}assets/256x256 Objects.png`);
+    
     // Charge les images de piece pour le joueur
-    this.load.image("playerTile", "/assets/images/pieces/p_white.png");
+    this.load.image("playerTile", `${base}assets/images/pieces/p_white.png`);
   }
 
   create() {
@@ -150,8 +151,8 @@ class GameScene extends Phaser.Scene {
   pathLogic(pathTilesJson) {
     // Le Pions du joueur
     const player = this.add.image(0, 0, "playerTile");
-    player.setOrigin(0.5, 1);
-    player.setDepth(1000); // au-dessus de la tuile
+    player.setOrigin(0.5, 1,5);
+    //player.setDepth(1000); // au-dessus de la tuile
 
     // Tableau qui va contenir les données du chemin
     const movingPaths = [];
